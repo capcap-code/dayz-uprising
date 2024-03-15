@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Trang chính thức của DayZ Việt Nam - DayZ Uprising. Khám phá thông tin game, cộng đồng, và các tính năng hấp dẫn. Tham gia ngay để trải nghiệm thế giới DayZ đầy kịch tính và hấp dẫn.">
+  <title>DayZ Việt Nam - DayZ Uprising: Trang Chủ</title>
+  <link rel="stylesheet" href="stylesheet/styles.css"> <!-- Link to external CSS file -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+  <style>
+    #home-page, #game-features {
+      transition: opacity 0.5s ease; /* Smooth transition for opacity */
+    }
+  </style>
+</head>
+<body>
+  <div class="nav_container">
+    <nav>
+      <div class="nav-logo">
+        <a>
+          <img src="assets/logo/logo.png" alt="Game Logo">   
+        </a>
+      </div>
+      <div class="nav-button">
+        <ul>
+          <li><a href="#home" id="home-link">Trang Chủ</a></li>
+          <li><a href="#game-features" id="feature-link">Thông Tin Game</a></li>
+          <li><a href="https://www.facebook.com/profile.php?id=100089503405989">Facebook</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <div class="background-video-container"></div>
+  <section id="home-page">
+
+    <div class="body">
+      <div class="home-container">
+        <div class="body-text">
+          <h1>DayZ Việt Nam - DayZ UpRising</h1>
+          <h2>Trang Chủ</h2>
+          <h2>Ở đây chúng tôi có một sân chơi DayZ <br>CHẤT, THÂN THIỆN, VĂN MINH<br></h2>
+          <button id="joinBtn"><a href="https://discord.com/invite/gjCzMVXr?utm_source=Discord%20Widget&utm_medium=Connect">THAM GIA NGAY</a></button>
+        </div>
+        <div class="discord-widget">
+          <iframe src="https://discord.com/widget?id=1201052747659747468&theme=dark" width="300" height="400" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="game-features" style="display: none;">
+    <div class="body">
+      <div class="feature-container">
+        <div class="feature">
+          <img src="assets\background\seek_for_supply.jpg" alt="Seek for Supply">
+          <h3>Sinh Tồn Trong Thế Giới DayZ: Khám Phá, Tìm Kiếm và Sống Sót</h3>
+          <p>Trong DayZ, nhiệm vụ của bạn không chỉ là chiến đấu, mà còn là tìm kiếm đồ ăn, nước uống, nơi trú ẩn và thậm chí là thuốc chữa bệnh để sống sót. Hãy sẵn sàng đối mặt với những thách thức khắc nghiệt và khám phá thế giới để tìm kiếm những nguồn lực quan trọng.</p>
+        </div>
+        <div class="feature">
+          <img src="assets\background\hunting_for_food.jpg" alt="Hunting for Food">
+          <h3>Những Sinh Vật Trong DayZ</h3>
+          <p>"Không chỉ có zombies, thế giới DayZ còn chứa đựng những loài thú hoang dã đầy nguy hiểm. Hãy sẵn sàng săn lùng chúng để kiếm thực phẩm cho bản thân, hoặc thậm chí là để bán và làm giàu. Tuy nhiên, sự sống sót không chỉ đơn giản như vậy, đó là một cuộc phiêu lưu đầy thách thức và hấp dẫn."</p>
+        </div>
+        <div class="feature">
+          <img src="assets\background\fight_zombies_survivors.jpg" alt="Fight Zombies and Survivors">
+          <h3>Chiến Đấu và Sống Sót</h3>
+          <p>DayZ không chỉ là cuộc chiến đấu chống lại zombies, mà còn là sự đối đầu với những thú đột biến và cả những người sống sót khác. "Nơi lạnh lẽo nhất là lòng người"</p>
+        </div>
+        <div class="feature">
+          <img src="assets\background\boss_event.jpg" alt="Boss Event">
+          <h3>Săn Boss và Chinh Phục Thử Thách Trong DayZ</h3>
+          <p>Tham gia vào cuộc săn boss trong DayZ để kiếm những trang bị quý giá và làm giàu bản thân. Những con boss mạnh mẽ đang chờ đợi bạn, hãy chuẩn bị tinh thần và sẵn sàng đối mặt với những thách thức đầy kịch tính trong thế giới đầy nguy hiểm này.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <script src="js/script.js"></script> <!-- Link to external JavaScript file -->
+  <script>
+    document.getElementById('feature-link').addEventListener('click', function(event) {
+      event.preventDefault(); // Prevent default behavior of anchor link
+      document.getElementById('home-page').style.display = 'none'; // Hide home container
+      document.getElementById('game-features').style.display = 'block'; // Display feature container
+    });
+  </script>
+</body>
+</html>
